@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: Poppins;
+  height: 100vh;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+}
+
+.container {
+  position: relative;
+  padding: 8%;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 41px 41px 86px #747474, -41px -41px 86px #ffffff;
+}
+
+.bt {
+  justify-content: space-between;
+  padding: 0.5%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 10%;
+}
+
+.bt #minizme {
+  background-color: #198754;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bt #big {
+  background-color: #0d6efd;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bt #close {
+  background-color: #dc3545;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#lang{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+}

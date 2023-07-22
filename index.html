@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" id="dir">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Perfect Age</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body style="padding: 12%">
+    <div class="container">
+      <h1>Your Perfect Age</h1>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"
+          ><i class="fas fa-calendar-times"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Age"
+          aria-label="Age"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div id="days" class="alert alert-success" role="alert">-</div>
+      <div id="hours" class="alert alert-danger" role="alert">-</div>
+
+      <div id="minutes" class="alert alert-warning" role="alert">-</div>
+      <div id="seconds" class="alert alert-info" role="alert">-</div>
+
+      <input
+        onclick="age()"
+        class="btn btn-primary mb-3"
+        type="button"
+        value="Check Your Age"
+        style="width: 100%"
+      />
+      <input
+        onclick="reset()"
+        class="btn btn-danger"
+        type="button"
+        value="Reset All The Values"
+        style="width: 100%"
+      />
+
+      <div class="bt d-flex">
+        <div onclick="minizme()" id="minizme" title="Minimise The Window"></div>
+        <div onclick="big()" id="big" title="Maximise The Window"></div>
+        <div onclick="cls()" id="close" title="Close The Window"></div>
+      </div>
+	  
+	      <div id="lang">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="arindex.html">العربية</a></li>
+
+            </ul>
+          </div>
+      </div>
+
+    </div>
+
+
+
+
+    <div id="cc"></div>
+
+    <!--Script Linking-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/age.js"></script>
+    <!--Script Linking End -->
+  </body>
+</html>
